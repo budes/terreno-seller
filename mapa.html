@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang='pt-BR'>
+<head>
+	<title>Mapa total</title>
+	<link rel="stylesheet" type="text/css" href="scripts-css/tags_basicas.css">
+	<link rel="stylesheet" type="text/css" href="scripts-css/opcoes_slider.css">
+	<link rel="stylesheet" type="text/css" href="scripts-css/conteudo.css">
+	<link rel="stylesheet" type="text/css" href="scripts-css/desenho-mapa.css">
+	<link rel="stylesheet" type="text/css" href="scripts-css/mapa.css">
+
+	<meta http-equiv="Content-Language" content="pt-br">
+
+	<!-- Meu icone -->
+	<!-- <link rel="icon" type="imagem/png" href="/imagem/icone.png" /> -->
+	<link rel="icon" type="imagem/png" href="/imagem/em-construcao.png" />
+	
+</head>
+
+<body>
+	<div class='detalhamento' id='mapa'>
+		<header class='ocup_tudo'>
+			<div id='titulo'>
+				<a href='index.html'> <button id='botao-mapa' style='display: inline-block;'> Voltar </button> </a>
+				<h1 id='mapa-versao' style='display: inline-block;'> Mapa visualizado </h1>
+			</div>
+		</header>
+
+		<content class='ocup_tudo'>
+			<div class="mapa-total">
+				<!-- O mapa todo da região -->
+			</div>
+		</content>
+
+		<section class='ocup_tudo' > 
+			<div class='descricao' id='map' style="width: 19rem; display:inline-block;">
+				<h2> Valores do mapa </h2>
+
+				<p>
+					Tamanho do mapa: 45000m² <br>
+					Comprimento total: 450m <br>
+					Largura total: 100m <br> <br>
+				</p>
+			</div>
+			<div class='descricao' id='ter' style="width: 20rem; display:inline-block;">
+				
+			</div>
+			<div class='descricao' id='prc-div' style=" display:inline-block;">
+				
+			</div>
+		</section>
+
+	</div>
+
+
+	<!-- 
+		O que ele disse:
+			100:10
+		e 10 era a largura
+		logo, devo fazer na mesma dimensão
+
+		proporção que eu usei
+		multipliquei por 2 dividi por 10 e peguei 67%
+		ou seja multipliquei por 2/10 * 0.67 ou 0.134
+	-->
+
+	<script script type="text/javascript" src='scripts-js/cria_mapa.js'>
+    </script>
+
+</body>
+</html>
