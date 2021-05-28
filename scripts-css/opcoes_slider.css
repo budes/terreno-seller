@@ -1,0 +1,51 @@
+/* ====== OPCOES SLIDER ====== */
+
+.opcoes {
+	display: inline-block;
+
+	width: 30%;
+	height: 99%;
+	overflow: hidden; /* Essa parte faz algo que eu não achasse que ela podia */ /* or overflow: hidden; */
+
+	border-right: 0.2rem solid rgb(220, 220, 220);
+}
+
+.opcoes content {
+
+	float: top;
+	top: 15%;
+	width: 70%;
+
+	position: relative;
+}
+
+.opcao {
+	display: block;
+
+	padding: 1rem;
+	margin: 1rem;
+
+	border-radius: 15px;
+
+	border: 0.2rem solid rgb(250, 140, 0);
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(20, 20, 20);
+
+	transition: background 0.35s, color 0.35s;
+
+	width: 75%;
+	height: 25%;
+}
+
+.opcao h2 {
+	height: 4rem;
+	font-size: 2rem;
+}
+
+.opcao p {
+	height: 3rem;
+	font-size: 1.2rem;
+}
+
+
+

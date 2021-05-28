@@ -1,0 +1,83 @@
+.ocup_tudo {
+	width: 100vw;
+	clear: both;
+
+	min-height: 3rem;
+}
+
+
+/* PARTE DE CIMA */
+#mapa-versao {
+	position: absolute;
+
+	float: left;
+	left: 40%;
+}
+
+#botao-mapa {
+	width: 7.5rem;
+
+	position: absolute;
+
+	padding: 1rem;
+	margin: 1rem;
+
+	float: left;
+	left: 0rem;
+
+	font-size: 1.5rem;
+
+	border-radius: 40px;
+
+	border: 0.2rem solid rgb(250, 140, 0);
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(20, 20, 20);
+
+	transition: background 0.25s, color 0.25s;
+}
+
+#botao-mapa:hover {
+	background-color: rgb(250, 140, 0);
+	color: rgb(240, 240, 240);
+}
+
+/* A PARTE INFERIOR */
+
+section {
+	margin-top: 3.5%;
+	color: rgb(20, 20, 20)
+}
+
+section div h2, section div p{
+	transform: translateY(-1rem);
+}
+
+#map, #ter {
+	border-right: 0.2rem solid rgb(200, 200, 200);
+}
+
+#prc-div {
+	transform: translateY(-55%);
+	
+	border: 0.2rem solid rgb(250, 140, 0) /*rgb(250, 140, 0)*/;
+	border-radius: 20px;
+	
+	width: 11.5rem;
+	margin: 0 5rem 0 5rem;
+
+	transition: background 0.25s, color 0.25s;
+}
+
+#prc-div:hover {
+	background-color: rgb(250, 140, 0);
+	color: rgb(230, 230, 230);
+}
+
+#prc-div h2{
+	font-size: 2rem;
+	transform: translate(7.5%, -47.5%);
+}
+#preco {
+	font-size: 1.5rem;
+	transform: translate(-15%, -40%);
+}

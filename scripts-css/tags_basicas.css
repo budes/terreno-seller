@@ -1,0 +1,17 @@
+html, body {
+	margin: 0;
+
+	height: calc(100vh - 0.4rem);
+	font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	border: 0;
+}
+
+div {
+	display: inline-block;
+}
