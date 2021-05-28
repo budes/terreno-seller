@@ -1,0 +1,76 @@
+/* Desenho */
+
+.desenho {
+	display: inline-block;
+	padding-top: 25rem;
+
+	position: relative;
+	transform: translateY(-4.25%);
+}
+
+.container {display: grid}
+
+.terreno {
+	grid-area: t;
+	border: 0.2rem solid rgb(60, 100, 200);
+	background-image: url('../imagem/chaoterreno.jpg');
+	background-size: 10rem;
+	transition: background 0.35s, color 0.35s;
+}
+
+.terreno:hover{
+	background-color: rgb(60, 100, 200);
+	color: rgb(240, 240, 240);
+}
+
+.rua {
+	grid-area: r;
+	border: 0.2rem solid rgb(250, 50, 60);
+	transition: background 0.35s, color 0.35s;
+}
+
+#segunda-rua {
+	grid-area: rd;
+}
+
+.rua:hover {
+	background-color: rgb(250, 50, 60);
+	color: rgb(240, 240, 240);
+}
+
+
+/* Formatação para os textos */
+.container div {transform: translateY(-100%)}
+
+.container .rua {transform: translateY(-600%)}
+
+.container .terreno .valor {transform: translate(-5%, 750%)}
+.container .rua .valor {transform: translateY(60%)}
+
+/* Para a segunda opção */
+#primeira-rua {transform: translateY(-100%)} 
+#primeira-rua .valor {transform: translate(-45%, 130%)}
+
+#segunda-rua {transform: translateY(-700%)}
+#segunda-rua .valor {transform: translate(0%, 30%)}
+
+#op2 .container .terreno .valor {transform: translate(-5%, 700%);}
+
+/* Desenhos específicos */
+
+/* Opcao 1 - Desenho */
+
+#op1 .container {
+	display: grid;
+	grid-template-columns: 7.5rem;
+	grid-template-rows: 22.5rem 3.75rem;
+	grid-template-areas: 't' 'r';
+}
+
+/* Opcao 2 - Desenho */
+#op2 .container{
+	display: grid;
+	grid-template-columns: 6.75rem 1.5rem;
+	grid-template-rows: 21rem 3rem;
+	grid-template-areas: 't r' 'rd .';
+}

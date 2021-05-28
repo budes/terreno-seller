@@ -1,0 +1,133 @@
+/* Desenho */
+
+/* MAPA */
+.mapa-total {
+	margin: 0;
+	margin-top: 6.5rem;
+
+	width: calc(2/10 * 0.67 * 450rem); /* 60.3rem; */
+	height: calc(2/10 * 0.67 * 100rem); /* 13.4rem; */
+
+	text-align: center;
+
+	/* background-color: rgb(100, 50, 10); */
+	background-image: url('../imagem/chaomapa.jpg');
+	background-size: 10rem;
+}
+
+.sessao{
+	display: flex;
+	flex-direction: row;
+
+	float: left;
+}
+
+.desenho {
+	float: left;
+}
+
+.container {display: grid}
+
+.terreno {
+	grid-area: t;
+	border-bottom: 0.01rem solid rgb(230, 230, 230);/*rgb(60, 100, 200);*/
+	background-image: url('../imagem/chaoterreno.jpg');
+	background-size: 10rem;
+	transition: background 0.35s, color 0.35s;
+}
+
+.op2 .terreno {
+	border-bottom: none;
+}
+
+.terreno:hover{
+	background-color: none;
+	color: rgb(240, 240, 240);
+	background-image: none;
+}
+
+.rua {
+	grid-area: r;
+	background-color: black;
+	/* border: 0.001px solid rgb(230, 230, 230);*/ /*rgb(250, 50, 60);*/
+	transition: background 0.35s, color 0.35s;
+}
+
+#segunda-rua {
+	grid-area: rd;
+}
+
+#intersec {
+	grid-area: rint;
+}
+
+.rua:hover {
+	background-color: rgb(250, 50, 60);
+	color: rgb(240, 240, 240);
+}
+
+
+
+/* Opcao 1 - Desenho */
+.op1 .container {
+	display: grid;
+	grid-template-rows: calc(2/10 * 0.67 * 10rem); /* 1.34rem; */
+	grid-template-columns: calc(2/10 * 0.67 * 30rem) calc(2/10 * 0.67 * 5rem); 
+	/* 4.02rem 0.67rem; */ 
+	grid-template-areas: 't r';
+}
+
+/* Opcao 2 - Desenho */
+.op2 .container{
+	display: grid;
+	grid-template-rows: calc(2/10 * 0.67 * 9rem) calc(2/10 * 0.67 * 2rem); 
+	/* 1.21rem 0.27rem; */
+	grid-template-columns: calc(2/10 * 0.67 * 28rem) calc(2/10 * 0.67 * 4rem); 
+	/* 3.75rem 0.54rem; */
+	grid-template-areas: 't r' 'rd rint';
+}
+
+
+
+/* Caso queira adicionar so 1 terreno */ 
+
+/* OPÇÃO 1 */
+.op1 .so_terreno {
+	grid-template-columns: calc(2/10 * 0.67 * 30rem);
+	grid-template-areas: 't'
+}
+
+/* OPÇÃO 2 */
+
+/*modelo 1 (→)*/
+.so_terreno .op2 .modelo1 {
+	grid-template-columns: calc(2/10 * 0.67 * 28rem);
+	grid-template-areas: 't' 'rd';
+
+}
+
+/*.modelo1 .terreno {
+	border-right: 0.01rem solid rgb(230, 230, 230);
+}*/
+
+/*modelo 2 (↓→)*/
+.so_terreno .op2 .modelo2 {
+	grid-template-rows: calc(2/10 * 0.67 * 9rem);
+	grid-template-columns: calc(2/10 * 0.67 * 28rem);
+	grid-template-areas: 't';
+}
+
+/*.modelo2 .terreno {
+	border-right: 0.01rem solid rgb(230, 230, 230);
+	border-bottom: 0.01rem solid rgb(230, 230, 230);
+}*/
+
+/*modelo 3 (↓)*/
+.modelo3 {
+	grid-template-rows: calc(2/10 * 0.67 * 9rem); 
+	grid-template-areas: 't r';
+}
+
+/*.modelo3 .terreno{
+	border-bottom: 0.01rem solid rgb(230, 230, 230);
+}*/

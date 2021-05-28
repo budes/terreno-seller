@@ -1,0 +1,91 @@
+/* ====== CONTEUDO ====== */
+
+.detalhamento {
+	box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 3px 20px 0 rgba(0,0,0,0.19);
+
+	display: inline-block;
+	align-content: center;
+	text-align: center;
+
+	position: relative;
+
+	border: 1rem;
+	margin: 1rem;
+
+	background-color: rgb(230, 230, 230);
+	border-radius: 15px;
+	width: 66%;
+	height: 94%;
+
+	overflow: hidden; /* Essa parte faz algo que eu não achasse que ela podia */ /* or overflow: hidden; */
+
+}
+
+.detalhamento h1 {
+	/*width: 42.5rem;*/
+	padding-top: 1.25rem;
+	height: 6rem;
+
+	font-size: 2.25rem;
+}
+
+.detalhamento p {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	
+	font-size: 1.15rem;
+	text-align: left;
+}
+
+.detalhamento h2 {
+	padding-left: 2.5rem;
+	height: 2rem;
+	text-align: left;
+}
+
+/* A PARTE INTERIOR */
+
+#titulo {
+	display:block;
+}
+
+.descricao {
+	display: inline-block;
+	width: 75.5%;
+
+	position: relative;
+	transform: translateY(-10%);
+}
+
+.descricao h2 {
+	padding-top: 2rem;
+	height: 2.4rem;
+}
+
+.descricao button {
+	width: 15rem;
+
+	padding: 1rem;
+	margin: 1rem;
+
+	transform: translate(-40%, 40%);
+	font-size: 1.5rem;
+
+	border-radius: 40px;
+
+	border: 0.2rem solid rgb(250, 140, 0);
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(20, 20, 20);
+
+	transition: background 0.35s, color 0.35s;
+}
+
+.descricao button:hover {
+	background-color: rgb(250, 140, 0);
+	color: rgb(240, 240, 240);
+}
+
+#mapa {
+	width: 96.5%;
+	height: 95%;
+}
